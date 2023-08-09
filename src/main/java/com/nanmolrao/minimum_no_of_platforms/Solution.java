@@ -3,6 +3,12 @@ package com.nanmolrao.minimum_no_of_platforms;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 
+/**
+ * find minimum number of platform required to arrange 6 trains.
+ * Input: arrival_time[] = {9:00, 9:40, 9:50, 11:00, 15:00, 18:00}
+ * departure_time[] = {9:10, 12:00, 11:20, 11:30, 19:00, 20:00}
+ **/
+
 public class Solution {
 
     static Logger log = Logger.getLogger(Solution.class.getName());
@@ -35,6 +41,10 @@ public class Solution {
         return minimumPlatforms;
     }
 
+    /**
+     * @param timeString - String value of a time int the format "HH:MM"
+     * @return - Time string converted to seconds
+     */
     public static Integer toSeconds(String timeString) {
         return (Integer.parseInt(timeString.split(":")[0]) * 3600)
                 + (Integer.parseInt(timeString.split(":")[1]) * 60);
