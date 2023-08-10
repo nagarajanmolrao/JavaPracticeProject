@@ -12,6 +12,12 @@ public class Solution {
 
     public static final Logger log = Logger.getLogger(Solution.class.getName());
 
+    /**
+     * Check strong number boolean.
+     *
+     * @param number the number
+     * @return the boolean
+     */
     public static boolean checkStrongNumber(Integer number) {
         int sum = 0;
         for(String eachDigit: String.valueOf(number).split("")){
@@ -20,6 +26,12 @@ public class Solution {
         return sum==number;
     }
 
+    /**
+     * Factorial integer.
+     *
+     * @param num the num
+     * @return the integer
+     */
     public static Integer factorial(Integer num) {
         if (num == 0 || num == 1) {
             return 1;
