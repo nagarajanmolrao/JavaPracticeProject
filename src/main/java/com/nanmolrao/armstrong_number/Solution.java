@@ -13,6 +13,11 @@ public class Solution {
 
     public static final Logger log = Logger.getLogger(Solution.class.getName());
 
+    /**
+     * Get armstrong numbers string.
+     *
+     * @return the string of armstrong numbers between 1 and 1000
+     */
     public static String getArmstrongNumbers(){
         StringBuilder returnString = new StringBuilder();
         for(int i = 1;i<=1000;i++){
@@ -24,6 +29,12 @@ public class Solution {
         return returnString.toString();
     }
 
+    /**
+     * Check for armstrong number boolean.
+     *
+     * @param number the number to be checked
+     * @return returns true if the number is Armstrong number, else returns false
+     */
     public static boolean checkForArmstrongNumber(Integer number){
         int n = String.valueOf(number).length();
         double sum = 0D;
