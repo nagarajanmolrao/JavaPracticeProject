@@ -7,10 +7,10 @@ import java.util.stream.Collectors;
 import java.util.stream.IntStream;
 
 /**
- * Print all Armstrong number between 1 and 1000.
+ * Print all Armstrong numbers between 1 and 1000.
  * An Armstrong number is an n-digit number that is equal to the sum of nth power of its digits. For example,
- * 6 = 61 = 6
- * 371 = 33 + 73 + 13 = 371
+ * 6 = 6^1 = 6
+ * 371 = 3^3 + 7^3 + 1^3 = 371
  **/
 public class Solution {
 
